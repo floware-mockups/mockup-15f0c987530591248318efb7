@@ -1,0 +1,320 @@
+{
+  "title": "Gestione interventi manutentivi scolastici",
+  "description": "Prototipo per registrare richieste, consultare gli interventi, monitorarne il livello di evasione e rendicontare le attività presso istituti scolastici di fantasia.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Dashboard",
+      "description": "Panoramica delle richieste e dell’avanzamento degli interventi manutentivi.",
+      "metrics": [
+        {
+          "label": "Richieste aperte",
+          "value": "18"
+        },
+        {
+          "label": "In lavorazione",
+          "value": "7"
+        },
+        {
+          "label": "Interventi completati",
+          "value": "24"
+        },
+        {
+          "label": "Evasione complessiva",
+          "value": "68%"
+        },
+        {
+          "label": "In attesa di verifica",
+          "value": "4"
+        }
+      ],
+      "columns": [
+        "Periodo",
+        "Richieste ricevute",
+        "Completate",
+        "Evasione"
+      ],
+      "rows": [
+        [
+          "Gennaio",
+          "12",
+          "8",
+          "67%"
+        ],
+        [
+          "Febbraio",
+          "15",
+          "11",
+          "73%"
+        ],
+        [
+          "Marzo",
+          "10",
+          "5",
+          "50%"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "richieste",
+      "title": "Richieste manutentive",
+      "description": "Elenco consultabile e filtrabile delle segnalazioni inviate dagli istituti.",
+      "metrics": [
+        {
+          "label": "Richieste totali",
+          "value": "42"
+        },
+        {
+          "label": "Priorità alta",
+          "value": "6"
+        }
+      ],
+      "columns": [
+        "Codice richiesta",
+        "Istituto",
+        "Data richiesta",
+        "Categoria",
+        "Priorità",
+        "Stato",
+        "Referente intervento"
+      ],
+      "rows": [
+        [
+          "INT-2401",
+          "Istituto Lumo delle Valli",
+          "2025-02-03",
+          "Edilizia",
+          "Alta",
+          "In lavorazione",
+          "Squadra Nubi"
+        ],
+        [
+          "INT-2402",
+          "Istituto Vela del Delta",
+          "2025-02-05",
+          "Impianti",
+          "Media",
+          "Presa in carico",
+          "Squadra Brina"
+        ],
+        [
+          "INT-2403",
+          "Istituto Nubi del Polesine",
+          "2025-02-06",
+          "Sicurezza",
+          "Alta",
+          "In attesa di verifica",
+          "Squadra Loto"
+        ],
+        [
+          "INT-2404",
+          "Istituto Brina di Levante",
+          "2025-02-09",
+          "Idraulica",
+          "Bassa",
+          "Completata",
+          "Squadra Vela"
+        ],
+        [
+          "INT-2405",
+          "Istituto Loto delle Acque",
+          "2025-02-11",
+          "Elettrica",
+          "Media",
+          "In lavorazione",
+          "Squadra Lumo"
+        ]
+      ],
+      "form": [
+        "Codice richiesta",
+        "Istituto",
+        "Data richiesta",
+        "Categoria",
+        "Priorità",
+        "Stato",
+        "Referente intervento"
+      ]
+    },
+    {
+      "id": "nuova-richiesta",
+      "title": "Nuova richiesta",
+      "description": "Inserimento di una nuova segnalazione manutentiva da parte di un istituto.",
+      "metrics": [],
+      "columns": [
+        "Istituto",
+        "Data richiesta",
+        "Categoria",
+        "Descrizione intervento",
+        "Priorità",
+        "Localizzazione",
+        "Referente istituto"
+      ],
+      "rows": [],
+      "form": [
+        "Istituto",
+        "Data richiesta",
+        "Categoria",
+        "Descrizione intervento",
+        "Priorità",
+        "Localizzazione",
+        "Referente istituto"
+      ]
+    },
+    {
+      "id": "avanzamento",
+      "title": "Avanzamento interventi",
+      "description": "Monitoraggio delle fasi operative, delle scadenze e dell’evasione delle richieste.",
+      "metrics": [
+        {
+          "label": "Scadenze superate",
+          "value": "3"
+        },
+        {
+          "label": "In attesa di verifica",
+          "value": "4"
+        },
+        {
+          "label": "Evasione media",
+          "value": "68%"
+        }
+      ],
+      "columns": [
+        "Codice richiesta",
+        "Istituto",
+        "Intervento",
+        "Stato",
+        "Avanzamento",
+        "Data prevista",
+        "Ultimo aggiornamento"
+      ],
+      "rows": [
+        [
+          "INT-2401",
+          "Istituto Lumo delle Valli",
+          "Ripristino copertura ala nord",
+          "In lavorazione",
+          "60%",
+          "2025-03-18",
+          "2025-03-06"
+        ],
+        [
+          "INT-2402",
+          "Istituto Vela del Delta",
+          "Verifica quadro elettrico",
+          "Presa in carico",
+          "20%",
+          "2025-03-20",
+          "2025-03-07"
+        ],
+        [
+          "INT-2403",
+          "Istituto Nubi del Polesine",
+          "Adeguamento uscita di sicurezza",
+          "In attesa di verifica",
+          "90%",
+          "2025-03-14",
+          "2025-03-08"
+        ],
+        [
+          "INT-2404",
+          "Istituto Brina di Levante",
+          "Riparazione perdita servizi",
+          "Completata",
+          "100%",
+          "2025-03-10",
+          "2025-03-10"
+        ]
+      ],
+      "form": [
+        "Codice richiesta",
+        "Istituto",
+        "Intervento",
+        "Stato",
+        "Avanzamento",
+        "Data prevista",
+        "Ultimo aggiornamento"
+      ]
+    },
+    {
+      "id": "rendicontazione",
+      "title": "Rendicontazione",
+      "description": "Riepilogo dei costi e delle attività concluse, consultabile per istituto e periodo.",
+      "metrics": [
+        {
+          "label": "Spesa rendicontata",
+          "value": "€ 48.600"
+        },
+        {
+          "label": "Interventi conclusi",
+          "value": "24"
+        },
+        {
+          "label": "Media per intervento",
+          "value": "€ 2.025"
+        }
+      ],
+      "columns": [
+        "Codice intervento",
+        "Istituto",
+        "Periodo",
+        "Categoria",
+        "Stato rendicontazione",
+        "Importo",
+        "Esito"
+      ],
+      "rows": [
+        [
+          "INT-2390",
+          "Istituto Lumo delle Valli",
+          "Gennaio 2025",
+          "Edilizia",
+          "Validata",
+          "€ 3.200",
+          "Completato"
+        ],
+        [
+          "INT-2392",
+          "Istituto Vela del Delta",
+          "Gennaio 2025",
+          "Impianti",
+          "Validata",
+          "€ 1.450",
+          "Completato"
+        ],
+        [
+          "INT-2395",
+          "Istituto Nubi del Polesine",
+          "Febbraio 2025",
+          "Sicurezza",
+          "In revisione",
+          "€ 5.800",
+          "Completato"
+        ],
+        [
+          "INT-2398",
+          "Istituto Brina di Levante",
+          "Febbraio 2025",
+          "Idraulica",
+          "Validata",
+          "€ 920",
+          "Completato"
+        ]
+      ],
+      "form": [
+        "Codice intervento",
+        "Istituto",
+        "Periodo",
+        "Categoria",
+        "Stato rendicontazione",
+        "Importo",
+        "Esito"
+      ]
+    }
+  ],
+  "theme": {
+    "palette": "petrolio",
+    "fonts": "alta-leggibilita"
+  }
+}
