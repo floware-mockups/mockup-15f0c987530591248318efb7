@@ -78,7 +78,8 @@
         "Categoria",
         "Priorità",
         "Stato",
-        "Referente intervento"
+        "Referente intervento",
+        "Tipologia opere"
       ],
       "rows": [
         [
@@ -88,7 +89,8 @@
           "Edilizia",
           "Alta",
           "In lavorazione",
-          "Squadra Nubi"
+          "Squadra Nubi",
+          "Manutenzione edilizia, copertura e finiture proprie degli edifici scolastici."
         ],
         [
           "INT-2402",
@@ -97,7 +99,8 @@
           "Impianti",
           "Media",
           "Presa in carico",
-          "Squadra Brina"
+          "Squadra Brina",
+          "Impianti elettrici"
         ],
         [
           "INT-2403",
@@ -106,7 +109,8 @@
           "Sicurezza",
           "Alta",
           "In attesa di verifica",
-          "Squadra Loto"
+          "Squadra Loto",
+          "Sicurezza"
         ],
         [
           "INT-2404",
@@ -115,7 +119,8 @@
           "Idraulica",
           "Bassa",
           "Completata",
-          "Squadra Vela"
+          "Squadra Vela",
+          "Impianti idraulici"
         ],
         [
           "INT-2405",
@@ -124,7 +129,8 @@
           "Elettrica",
           "Media",
           "In lavorazione",
-          "Squadra Lumo"
+          "Squadra Lumo",
+          "Impianti elettrici"
         ]
       ],
       "form": [
@@ -134,7 +140,8 @@
         "Categoria",
         "Priorità",
         "Stato",
-        "Referente intervento"
+        "Referente intervento",
+        "Tipologia opere"
       ]
     },
     {
