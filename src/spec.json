@@ -311,10 +311,91 @@
         "Importo",
         "Esito"
       ]
+    },
+    {
+      "id": "incarichi-operai",
+      "title": "Incarichi operai",
+      "description": "Incarichi dimostrativi associati alle richieste manutentive tramite il codice richiesta.",
+      "metrics": [],
+      "columns": [
+        "Codice richiesta",
+        "Operai incaricati",
+        "Attività",
+        "Data intervento",
+        "Luogo",
+        "Istruzioni",
+        "Stato incarico"
+      ],
+      "rows": [
+        [
+          "INT-2401",
+          "OP-01, OP-02",
+          "Ripristino copertura ala nord",
+          "2025-03-18",
+          "Istituto Lumo delle Valli, ala nord",
+          "Delimitare la zona prima dell’intervento.",
+          "In corso"
+        ],
+        [
+          "INT-2402",
+          "OP-03",
+          "Verifica quadro elettrico",
+          "2025-03-20",
+          "Istituto Vela del Delta, locale tecnico",
+          "Coordinare il sopralluogo con la squadra.",
+          "Assegnato"
+        ],
+        [
+          "INT-2403",
+          "OP-02, OP-04",
+          "Controllo uscita di sicurezza",
+          "2025-03-14",
+          "Istituto Nubi del Polesine, ala est",
+          "Mantenere libero il passaggio alternativo.",
+          "In corso"
+        ],
+        [
+          "INT-2404",
+          "OP-01",
+          "Riparazione perdita servizi",
+          "2025-03-10",
+          "Istituto Brina di Levante, servizi piano terra",
+          "Verificare la tenuta al termine dei lavori.",
+          "Completato"
+        ],
+        [
+          "INT-2405",
+          "OP-04",
+          "Verifica punti luce",
+          "2025-03-21",
+          "Istituto Loto delle Acque, corridoio",
+          "Segnalare temporaneamente la zona di lavoro.",
+          "Assegnato"
+        ]
+      ],
+      "form": [
+        "Codice richiesta",
+        "Operai incaricati",
+        "Attività",
+        "Data intervento",
+        "Luogo",
+        "Istruzioni",
+        "Stato incarico"
+      ]
     }
   ],
   "theme": {
     "palette": "petrolio",
     "fonts": "alta-leggibilita"
-  }
+  },
+  "custom": [
+    {
+      "name": "ModuloIncaricoOperai",
+      "title": "Assegnazione incarico",
+      "description": "Azione sulla richiesta per consultare e modificare il relativo incarico operaio.",
+      "role": "cell",
+      "pageId": "richieste",
+      "column": "Codice richiesta"
+    }
+  ]
 }
